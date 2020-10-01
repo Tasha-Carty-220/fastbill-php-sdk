@@ -110,7 +110,7 @@ class XmlService
                         }
                     }
                 } else {
-                    $data->addChild($key, htmlspecialchars((string) $value, ENT_COMPAT));
+                    $data->addChild($key, (string) $value);
                 }
             }
         }
